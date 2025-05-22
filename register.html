@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <div id="successMessage" class="success-message">Cadastro realizado com sucesso!</div>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+                <div id="nameError" class="error">O nome deve ter mais de 3 letras.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <div id="emailError" class="error">Email inválido.</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+                <div id="passwordError" class="error">A senha é obrigatória.</div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar Senha</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <div id="confirmPasswordError" class="error">As senhas não coincidem.</div>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Data de Nascimento</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <div id="birthdateError" class="error">Você deve ter mais de 18 anos.</div>
+            </div>
+            <div class="form-group">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" maxlength="9" required>
+                <div id="cepError" class="error">CEP inválido.</div>
+            </div>
+            <div class="form-group">
+                <label for="street">Rua</label>
+                <input type="text" id="street" name="street" readonly>
+            </div>
+            <div class="form-group">
+                <label for="neighborhood">Bairro</label>
+                <input type="text" id="neighborhood" name="neighborhood" readonly>
+            </div>
+            <div class="form-group">
+                <label for="city">Cidade</label>
+                <input type="text" id="city" name="city" readonly>
+            </div>
+            <div class="form-group">
+                <label for="state">Estado</label>
+                <input type="text" id="state" name="state" placeholder="Ex.: SP" readonly>
+            </div>
+            <div class="form-group">
+                <label for="number">Número</label>
+                <input type="text" id="number" name="number" required>
+                <div id="numberError" class="error">O número é obrigatório.</div>
+            </div>
+            <div class="form-group">
+                <label for="complement">Complemento (opcional)</label>
+                <input type="text" id="complement" name="complement">
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p style="text-align: center; margin-top: 15px;">
+            Já tem uma conta? <a href="login.html">Faça login</a>
+        </p>
+    </div>
+</body>
+</html>
